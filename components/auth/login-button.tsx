@@ -6,7 +6,7 @@ type LoginButtonProps = {
   asChild?: boolean;
 };
 
-const LoginButton = ({
+export const LoginButton = ({
   children,
   asChild,
   mode = "redirect",
