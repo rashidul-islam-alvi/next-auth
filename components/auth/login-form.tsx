@@ -34,7 +34,7 @@ const LoginForm = () => {
 
   const onFormSubmit = (values: z.infer<typeof LoginSchema>) => {
     startTransition(() =>
-      login(values).then((data) => {
+      login(values).then((data: any) => {
         setError(data.error);
         setSuccess(data.success);
       })
